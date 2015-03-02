@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+    <name>plg_system_nnnouserlogin</name>
+    <author>Niels Nübel</author>
+    <creationDate>28 Februar 2015</creationDate>
+    <copyright>(C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+    <license>MIT license: https://github.com/nn-medienagentur/grunttheme/blob/master/LICENSE</license>
+    <authorEmail>info@nn-medienagentur.de</authorEmail>
+    <authorUrl>www.nn-medienagentur.de</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_SYSTEM_NNNOUSERLOGIN_XML_DESCRIPTION</description>
+    <files>
+        <file plugin="nnnouserlogin">nnnouserlogin.php</file>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+    </files>
+
+    <media folder="media" destination="plg_system_nnnouserlogin">
+        <folder>css</folder>
+        <folder>js</folder>
+    </media>
+
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_nnnouserlogin.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_nnnouserlogin.sys.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.plg_system_nnnouserlogin.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.plg_system_nnnouserlogin.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field  name="username"
+                        type="text"
+                        class="btn-group"
+                        default=""
+                        label="PLG_SYSTEM_NNNOUSERLOGIN_USERNAME_LABEL"
+                        description="PLG_SYSTEM_NNNOUSERLOGIN_USERNAME_DESC"
+                        />
+                <field  name="placeholder"
+                        type="text"
+                        class="btn-group"
+                        default=""
+                        label="PLG_SYSTEM_NNNOUSERLOGIN_PLACEHOLDER_LABEL"
+                        description="PLG_SYSTEM_NNNOUSERLOGIN_PLACEHOLDER_DESC"
+                        />
+                <field  name="submit"
+                        type="text"
+                        class="btn-group"
+                        default=""
+                        label="PLG_SYSTEM_NNNOUSERLOGIN_SUBMIT_LABEL"
+                        description="PLG_SYSTEM_NNNOUSERLOGIN_SUBMIT_DESC"
+                        />
+                <field name="intro-text"
+                       type="textarea"
+                       default=""
+                       cols="25"
+                       rows="2"
+                       label="PLG_SYSTEM_NNNOUSERLOGIN_INTRO_TEXT_LABEL"
+                       description="PLG_SYSTEM_NNNOUSERLOGIN_INTRO_TEXT_DESC"
+                       filter="raw"/>
+                <field name="outro-text"
+                       type="textarea"
+                       default=""
+                       cols="25"
+                       rows="2"
+                       label="PLG_SYSTEM_NNNOUSERLOGIN_OUTRO_TEXT_LABEL"
+                       description="PLG_SYSTEM_NNNOUSERLOGIN_OUTRO_TEXT_DESC"
+                       filter="raw"/>
+                <field  name="loadCSS"
+                        type="radio"
+                        class="btn-group"
+                        default="0"
+                        label="PLG_SYSTEM_NNNOUSERLOGIN_LOADCSS_LABEL"
+                        description="PLG_SYSTEM_NNNOUSERLOGIN_LOADCSS_DESC"
+                        >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field  name="loadJS"
+                        type="radio"
+                        class="btn-group"
+                        default="0"
+                        label="PLG_SYSTEM_NNNOUSERLOGIN_LOADJS_LABEL"
+                        description="PLG_SYSTEM_NNNOUSERLOGIN_LOADJS_DESC"
+                        >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

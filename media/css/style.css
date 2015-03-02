@@ -1,0 +1,43 @@
+body {
+	position: relative;
+}
+#nnnouserlogin {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+}
+#nnnouserlogin_wrapper {
+	color: #fff;
+	background: #46535C;
+	width: 100%;
+	z-index: 10000;
+	padding: 20px 0;
+	display: none;
+	-webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+}
+#nnnouserlogin_button {
+	background: #445059;
+	color: #fff;
+	width: 30px;
+	height : 25px;
+	z-index: 10000;
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+	opacity: 1 !important;
+}
+#nnnouserlogin_button.close .up {
+	display : block;
+}
+#nnnouserlogin_button.open .up {
+	display: none;
+}
+#nnnouserlogin_button.close .down {
+	display : none;
+}
+#nnnouserlogin_button.open .down {
+	display: block;
+}
